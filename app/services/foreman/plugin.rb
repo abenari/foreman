@@ -202,5 +202,9 @@ module Foreman #:nodoc:
       ComputeResource.register_provider provider
     end
 
+    def widget(options)
+      Dashboard::Manager.map.widget(options)
+    end
+
   end
 end
