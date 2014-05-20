@@ -1,7 +1,7 @@
 module DashboardHelper
 
   def dashboard_actions
-    [_("Generated at %s") % Time.now.to_s(:short),
+    [_("Generated %s") % timeago_tag(Time.zone.now, :title => false),
      select_action_button(_("Manage dashboard"), {},
                           link_to_function(_("Save dashboard"), 'save_position()'),
                           link_to_function(_("Reset to default"), 'reset_position()'),

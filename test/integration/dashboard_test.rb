@@ -12,7 +12,7 @@ class DashboardTest < ActionDispatch::IntegrationTest
 
   test "dashboard page" do
     assert_index_page(dashboard_path,"Overview",false,true,false)
-    assert page.has_content? 'Generated at'
+    assert page.has_content? 'Generated'
   end
 
   test "dashboard link hosts that had performed modifications" do

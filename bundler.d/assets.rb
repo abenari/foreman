@@ -13,4 +13,5 @@ group :assets do
   gem 'locale', '<= 2.0.9'
   gem "multi-select-rails", "~> 0.9.10"
   gem 'gridster-rails'
+  gem 'rails-timeago', '~> 2.0'
 end

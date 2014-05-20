@@ -14,6 +14,7 @@
 //= require jquery.multi-select
 //= require settings
 //= require jquery.gridster
+//= require rails-timeago-all
 
 $(document).on('ContentLoad', function(){onContentLoad()});
 
